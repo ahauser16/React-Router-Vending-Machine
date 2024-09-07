@@ -1,0 +1,26 @@
+.vending-machine {
+    background-image: url('vendingMachine.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.vending-machine ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.vending-machine a {
+    color: white;
+    text-decoration: none;
+}
+
+.vending-machine a:hover {
+    text-decoration: underline;
+}
