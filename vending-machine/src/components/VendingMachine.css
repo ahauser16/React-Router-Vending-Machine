@@ -11,16 +11,51 @@
     text-shadow: 2px 2px 4px #000000;
 }
 
-.vending-machine ul {
-    list-style-type: none;
-    padding: 0;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(20, .5fr);
+    /* Adjust the number of columns as needed */
+    grid-template-rows: repeat(3, 1fr);
+    /* Adjust the number of rows as needed */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.vending-machine a {
-    color: white;
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* Optional: to visualize the grid items */
 }
 
-.vending-machine a:hover {
-    text-decoration: underline;
+.grid-item:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Optional: to highlight on hover */
 }
+
+.kitkat {
+    grid-column: 6 / 8;
+    grid-row: 2 / 3;
+}
+
+.twix {
+    grid-column: 8 / 10;
+    grid-row: 2 / 3;
+}
+
+.peanutMM {
+    grid-column: 10 / 12;
+    grid-row: 2 / 3;
+}
+
+.plainMM {
+    grid-column: 12 / 14;
+    grid-row: 2 / 3;
+}
+

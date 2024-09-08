@@ -1,19 +1,25 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import VendingMachine from './components/VendingMachine';
-import Soda from './components/Soda';
-import Chips from './components/Chips';
-import Chocolate from './components/Chocolate';
+import Kitkat from './components/Kitkat';
+import Twix from './components/Twix';
+import PeanutMM from './components/PeanutMM';
+import PlainMM from './components/PlainMM';
 
-const App = () => (
-  <Router>
-    <Routes>
-      <Route path="/" element={<VendingMachine />} />
-      <Route path="/soda" element={<Soda />} />
-      <Route path="/chips" element={<Chips />} />
-      <Route path="/chocolate" element={<Chocolate />} />
-    </Routes>
-  </Router>
-);
+function App() {
+  return (
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<VendingMachine />} />
+          <Route path="/kitkat" element={<Kitkat />} />
+          <Route path="/twix" element={<Twix />} />
+          <Route path="/peanutMM" element={<PeanutMM />} />
+          <Route path="/plainMM" element={<PlainMM />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
+}
 
 export default App;
